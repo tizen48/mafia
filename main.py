@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.WARNING,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 token = '1113481567:AAG2qrd7pEbwj7pzA3sVZmLd7GQqohnufLE'
-updater = Updater(token)
+updater = Updater(token, use_context=True)
 
 freenames = s.names_list.copy()
 
